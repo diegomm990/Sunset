@@ -1,0 +1,135 @@
+.bignav {
+    position: fixed;
+    width:100%;
+    background: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1000px) / 2);
+    z-index: 10;
+}
+.navmenu, .navmenuin {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: -24px;
+}
+@media (max-width:1180px){
+    .navmenu, .navmenuin {
+        margin-right: 20px;
+    }
+}
+.btncart {
+    width: fit-content;
+    color:white;
+    padding: 7px;
+    position: absolute;
+    font-size: 2.7rem;
+    top: 1.4rem;
+    right: 1.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btncartt {
+    color:white;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 2.5rem;
+    position: relative;
+    top: 0;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    cursor:pointer;
+}
+.btncartt:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+.navlinks {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    text-decoration: none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+.navlinks:hover {
+    font-weight: bold;
+}
+
+.btnmenu{
+    width: fit-content;
+    padding: 7px;
+    position: absolute;
+    font-size: 1.8rem;
+    top: 1.25rem;
+    right: 5rem;
+    cursor: pointer;
+}
+.logo {
+    height: 60px;
+    border-radius: 50%;
+}
+i {
+    display: none;
+    color: black;
+}
+.home {
+    display: none;
+}
+.celmenu {
+    display: none;
+}
+
+
+@media (max-width: 768px){
+    .logo {
+        margin-left: 25px;
+    }
+    i { 
+        display:block;
+        color:white;
+        cursor: pointer;}
+    .navmenu {
+        display: grid;
+        margin-top: 71px;
+        width: 80%;
+        background-color: black;
+        height: 350px;
+        justify-content: center;
+        font-size: 4rem;
+        border-top: 2px solid white;
+    }
+    .navmenuin {
+        display: none;
+    }
+    .home {
+        color: white;
+        display: flex;
+        align-items: center;
+        text-align:center;
+        text-decoration: none;
+        padding:    1rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .celmenu {
+        display: flex;
+    }
+    .btncartt {
+        display:none
+    }
+    .btncart:hover {
+        background-color: white;
+        color: black;
+        transition: all 0.2s ease-in-out;
+    }
+    .navlinks {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
